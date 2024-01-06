@@ -1,0 +1,203 @@
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins','sans-serif'; */
+
+}
+
+body {
+    min-height: 100vh;
+    background: url(../image/background-1.jpg) no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav {
+    background: rgba(146, 15, 15, 0.823);
+    color: #fff;
+    border-bottom: 2px solid rgb(255, 223, 0.3);
+
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.set-1 {
+    display: flex;
+
+}
+
+.set-2 {
+    background: rgba(126, 125, 125, 0.758);
+    color: #fff;
+
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5);
+}
+
+.set-3 {
+    background: rgba(139, 0, 0, 0.863);
+    backdrop-filter: blur(100px);
+    box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+    background: darkred;
+    border-color: yellow;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    background: rgb(255, 190, 27);
+    border-color: rgb(255, 0, 0);
+}
+
+.card-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-login {
+    display: inline;
+    position: relative;
+}
+
+li {
+
+    right: 10px;
+    display: flex;
+    color: #fff;
+    font-size: clamp(10px, 2.5vw, 18px);
+    text-decoration: none;
+    margin-right: 15px;
+    list-style: none;
+    transition: .3s;
+
+}
+
+li:hover {
+
+
+    display: flex;
+    color: rgb(255, 29, 29);
+    margin-right: 15px;
+    list-style: none;
+    font-size: clamp(11px, 2.5vw, 19px);
+
+}
+
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    background: rgba(146, 15, 15, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgb(255, 223, 0.3);
+}
+
+.card-2 {
+    background-color: rgba(139, 0, 0, 0.707);
+    height: 100%;
+    width: 90%;
+    justify-content: center;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.card-3 {
+    background-color: rgba(255, 242, 0, 0.707);
+    height: 100%;
+    width: 85%;
+    justify-content: center;
+    position: absolute;
+}
+
+.card-1 {
+    display: grid;
+    place-items: center;
+    height: 50rem;
+
+}
+
+.center-card {
+    display: grid;
+    place-items: center;
+
+}
+.image_floor {
+    min-height: 100vh;
+    background: url(../image/image_floor.jpg) no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+}
+
+.block-floor{
+    font-size: clamp(10px, 2.5vw, 23px);
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(226, 193, 3);
+}
+
+
+.floor-1 {
+    min-height: 60vh;
+    background: url(../image/floors/floor-1.jpg) no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+}
+.floor-2 {
+    min-height: 60vh;
+    background: url(../image/floors/floor-2.jpg) no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+}
+
+.floor-3 {
+    min-height: 60vh;
+    background: url(../image/floors/floor-3.jpg) no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+}
+.image_EN_308 {
+    height: 100%;
+    width: 100%;
+    background: url(../image/image_rooms/image_EN-1-308.png) no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.floor-4 {
+    min-height: 60vh;
+    background: url(../image/floors/floor-4.jpg) no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+}
+.floor-5 {
+    min-height: 100vh;
+    background: url(../image/floors/floor-5.jpg) no-repeat;
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-position: center;
+}
