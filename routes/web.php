@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::group(['middleware' => 'prevent-back-history'],function(){
 
 Route::get('/', function () {
     return view('auth.login');
@@ -19,12 +20,14 @@ Route::get('/', function () {
 Route::get('/layout', function () {
     return view('layouts.layout_nav');
 });
-Route::get('/test', function () {
-    return view('home');
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('/logout', [App\Http\Controllers\HomeController::class, 'destroy'])->name('logout');
+Route::post('save', [App\Http\Controllers\HomeController::class, 'store'])->name('submit_data');
 // Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
 
@@ -39,4 +42,18 @@ Route::prefix('EN-floors')->group(function () {
     Route::get('/floor-4', [App\Http\Controllers\HomeController::class, 'floor4'])->name('floor-4');
     Route::get('/floor-5', [App\Http\Controllers\HomeController::class, 'floor5'])->name('floor-5');
     Route::get('/room-EN-1-102', [App\Http\Controllers\HomeController::class, 'room_EN_1_102'])->name('room-EN-1-102');
-});
+});// End
+
+
+
+
+    Route::middleware('Isteacher')->group(function () {
+        Route::prefix('teacher')->group(function () {
+      Route::get('/dashboard-T',[\App\Http\Controllers\TeacherController::class, 'dashboard_T'])->name('dashboard-T');
+      Route::get('/setting/electronic',[\App\Http\Controllers\TeacherController::class, 'tableElectronic'])->name('tableElectronic-T');
+    
+    
+    });// End teacher
+    });
+
+});// Prevent Back Middleare

@@ -6,7 +6,7 @@
 @extends('modal.modal')
 
 <div class=" di right-150 font ">
-    <button class="button" data-bs-target="#showform" data-bs-toggle="modal">แจ้งซ่อม</button>
+   
 
 </div>
 

@@ -4,10 +4,12 @@
 @endsection
 @section('content')
 @extends('modal.modal')
-
-   <div class="btn1" onclick="open_modal()">
+<div class="container red">
+    <div class="btn1" onclick="open_modal()">
         Click to open modal
     </div>
+</div>
+   
 
    
 @endsection
