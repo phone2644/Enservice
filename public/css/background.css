@@ -82,16 +82,7 @@ li {
 
 }
 
-li:hover {
 
-
-    display: flex;
-    color: rgb(255, 29, 29);
-    margin-right: 15px;
-    list-style: none;
-    font-size: clamp(11px, 2.5vw, 19px);
-
-}
 
 .header {
 

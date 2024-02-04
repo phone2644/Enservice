@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Equipment extends Model
 {
     use HasFactory;
+<<<<<<< HEAD
     protected $fillable = [
         'name',
         'description',
@@ -18,4 +19,6 @@ class Equipment extends Model
     {
         return $this->belongsTo(Problem::class);
     }
+=======
+>>>>>>> origin/main
 }

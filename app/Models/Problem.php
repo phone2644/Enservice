@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Problem extends Model
 {
     use HasFactory;
+<<<<<<< HEAD
     protected $fillable = [
         'topic',
         'problem',
@@ -19,3 +20,6 @@ class Problem extends Model
         return $this->hasMany(Equipment::class);
     }
 }
+=======
+}
+>>>>>>> origin/main

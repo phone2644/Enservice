@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @php
     use App\Models\Equipment;
     use App\Models\Problem;
@@ -8,10 +9,16 @@
 @extends('layouts.app')
 @section('title')
     จัดการอุปกรณ์อิเล็กทรอนิกส์
+=======
+@extends('layouts.app')
+@section('title')
+    dashboard
+>>>>>>> origin/main
 @endsection
 @section('content')
     
         <div class="card_white">
+<<<<<<< HEAD
            <div class="card" style="margin: 2.5rem;">
             <table class="table table-Secondary table-hover">
                 <thead class="table-active">
@@ -41,6 +48,9 @@
                 </tbody>
               </table>
            </div>
+=======
+            
+>>>>>>> origin/main
         </div>
     
 @endsection
