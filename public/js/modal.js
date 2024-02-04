@@ -1,13 +1,4 @@
-function open_modal() { 
-    $("#modal").css("display", "flex")
-    setTimeout(()=>{
-        $("#modal").css({
-            "opacity":"1",
-            "transform":"translateY(0)"
-        })
 
-    }, 50)
-}
 
 function close_modal() {
    
@@ -19,7 +10,7 @@ function close_modal() {
    setTimeout(() =>{
    $("#modal").css("display", "none")
   
-
+   window.location.reload();
     }, 300)
 
 }
@@ -96,61 +87,4 @@ function close_modal() {
                 break;
         }
     });
-
-
-    $('#btn-finish-form').click(function(response) {
-        // // these image appends are getting dropzones instances
-        // formData.append('image', $('#dropzone_file')[0]);
-        // $("#showform").empty();
-        //if($('#myform'.valid())
-        $.ajax({
-            url: "{{route('content_user')}}",
-            type: "POST",
-            enctype: 'multipart/form-data',
-            data: {
-                topic: $('#topic').val(),
-                issue: $('#issue').val(),
-                campus: $('#campus').val(),
-                description: $('#description').val(),
-                email: $('#email').val(),
-                name: $('#name').val(),
-                phone: $('#phone').val(),
-                line: $('#line').val(),
-                dropzone_file: $('#dropzone_file').files[0],
-                contact_facebook: $('#contact_facebook').val(),
-                "_token": "{{ csrf_token() }}",
-
-            },
-            cache: false,
-            success: function(response) {
-                console.log(response)
-                if (response == true) {
-
-                    $.toast({
-                        heading: 'Success',
-                        text: 'And these were just the basic demos! Scroll down to check further details on how to customize the output.',
-                        showHideTransition: 'slide',
-                        icon: 'success'
-                    })
-                    setTimeout(function() {
-                        location.reload();
-                    }, 3000);
-
-                } else {
-
-                    alert('Failed')
-                    $.toast({
-                        heading: 'Error',
-                        text: 'Report any <a href="https://github.com/kamranahmedse/jquery-toast-plugin/issues">issues</a>',
-                        showHideTransition: 'fade',
-                        icon: 'error'
-                    })
-                }
-
-            }
-        });
-
-    });
-
-
 

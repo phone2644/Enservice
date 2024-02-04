@@ -1,40 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+@extends('layouts.layout_modal')
 
-    <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
-</head>
-<body>
+@section('title')
+    Floor-1
+@endsection
+@section('content')
+    @extends('modal.modal')
+    <div id="message"></div>
+    <div class="py-12">
+        <div class="container">
+            <div class="row">
+                <div class="card" style="top: 30px">
+                    <div class="card-room">
 
-<div  class="btn1" onclick="open_modal()">
-    Click
-</div>
+                        <div class="container testone">
 
+                            <div class="btn1 dataSet" data-target="#modal" onclick="open_modal('AIR-1','ส่งค่าเข้าตอนคลิกเข้าหน้านี้')" data-electronic="AIR-1">AIR-1</div>
+                            <div class="btn1" data-bs-target="#donus" data-bs-toggle="modal" onclick="open_modal('AIR-1','ส่งค่าเข้าตอนคลิกเข้าหน้านี้')">AIR-2</div>
+                            <div class="btn1 buttomClosed" data-bs-target="#donus" data-bs-toggle="modal" data-equipment="2" data-position="r-306">PROJECTOR-1</div>
+                            <div class="btn1" onclick="open_modal()">PC-1</div>
+                            <div class="btn1" onclick="open_modal()">PC-2</div>
+                            <div class="btn1" onclick="open_modal()">PC-3</div>
+                            <div class="btn1" onclick="open_modal()">PC-4</div>
+                            <div class="btn1" onclick="open_modal()">PC-5</div>
+                            <div class="btn1" onclick="open_modal()">PC-6</div>
+                            <div class="btn1" onclick="open_modal()">PC-7</div>
+                            <div class="btn1" onclick="open_modal()">PC-8</div>
+                            <div class="btn1" onclick="open_modal()">PC-9</div>
+                            <div class="btn1" onclick="open_modal()">PC-10</div>
+                            <div class="btn1" onclick="open_modal()">PC-11</div>
+                            <div class="btn1" onclick="open_modal()">PC-12</div>
+                            <div class="btn1" onclick="open_modal()">PC-13</div>
+                            <div class="btn1" onclick="open_modal()">PC-14</div>
+                            <div class="btn1" onclick="open_modal()">PC-15</div>
+                            <div class="btn1" onclick="open_modal()">PC-16</div>
+                            <div class="btn1" onclick="open_modal()">PC-17</div>
+                            <div class="btn1" onclick="open_modal()">PC-18</div>
+                            <div class="btn1" onclick="open_modal()">PC-19</div>
+                            <div class="btn1" onclick="open_modal()">PC-20</div>
+                            <div class="btn1" onclick="open_modal()">PC-21</div>
+                            <div class="btn1" onclick="open_modal()">PC-22</div>
+                        </div>
 
+                    </div>
+                </div>
 
-    <div id="modal" class="modal">
-        <div class="modal-bg"></div>
-        <div class="modal-card">
-            <h1>Form</h1>
-            <div class="form-control">
-                <span>First name</span>
-                <input type="text" class="txt">
-            </div>
-            <div class="form-button">
-                <div class="btn-cancel" onclick="close_modal()">Cancel</div>
-                <div class="btn-Save">Save</div>
             </div>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script  src="{{ asset('js/modal.js') }}"></script>
-   
-
-    
-</body>
-</html>
+@endsection
