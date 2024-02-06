@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Problem extends Model
 {
     use HasFactory;
-<<<<<<< HEAD
     protected $fillable = [
         'topic',
         'problem',
@@ -17,9 +16,7 @@ class Problem extends Model
 
     public function equipments()
     {
-        return $this->hasMany(Equipment::class);
+        return $this->belongTo(Equipment::class);
+        // return $this->hasMany(Equipment::class);
     }
 }
-=======
-}
->>>>>>> origin/main
